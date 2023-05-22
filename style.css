@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: center/cover
+    url("https://www.expenseanywhere.com/wp-content/uploads/2016/09/website-backgrounds-E280AB1E280AC-E280ABE280AC.jpg")
+    no-repeat;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.menu-bar {
+  background: #dae5ea linear-gradient(0.25turn, #828585, #808978, #f69d3c);
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar i {
+  margin-right: 8px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #151313;
+}
+
+.active,
+.menu-bar ul li:hover {
+  background-color: #e8f6e4;
+  border-radius: 3px;
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+  position: absolute;
+  background: #e8f6e4;
+  margin-top: 10px;
+  margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #181717;
+  background: transparent;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+  color: #f69d3c;
+}
+.fa-angle-right {
+  float: right;
+  color: #0b0c0c;
+}
+
+.sub-menu-2 {
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background: #e8f6e4;
+  z-index: 1;
+}
+
+main div {
+  width: 550px;
+  height: 350px;
+  border: 2px solid green;
+
+  border-radius: 5px;
+  margin: 0 auto;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3f87a6 linear-gradient(0.25turn, #828585, #ebf8e1, #f69d3c);
+}
+
+.highlighted {
+  display: block;
+  margin-bottom: 25px;
+  text-shadow: -0.3rem -0.2rem 0.2rem rgb(198, 206, 192),
+    0.3rem 0.2rem 0.1rem rgb(143, 146, 140);
+  color: #151715;
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cent {
+  text-align: center;
+}
